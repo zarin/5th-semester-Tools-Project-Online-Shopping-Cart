@@ -12,7 +12,7 @@
   <div class="container-fluid font-monospace">
     <a class="navbar-brand text-warning pb-2"><h1>My Store</h1></a>
     <div class="d-flex">
-    <a href=""class="text-warning text-decoration-none pe-2"><i class="fas fa-home"></i>Home |</a>
+    <a href="home.php"class="text-warning text-decoration-none pe-2"><i class="fas fa-home"></i>Home |</a>
     <a href=""class="text-warning text-decoration-none pe-2"><i class="fas fa-shopping-cart"></i>Cart(0) |</a>
     <span class="text-warning pe-2">
         <i class="fas fa-user-shield"></i>Hello |
@@ -24,9 +24,9 @@
 </div>
 <div class="bg-success font-monospace">
   <ul class="list-unstyled d-flex justify-content-center">
-    <li><a href="" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Gents</a></li>
-    <li><a href="" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Ladies</a></li>
-    <li><a href="" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Kids</a></li>
+    <li><a href="gents.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Gents</a></li>
+    <li><a href="ladies.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Ladies</a></li>
+    <li><a href="kids.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Kids</a></li>
 </ul>
 </div>
 </body>
