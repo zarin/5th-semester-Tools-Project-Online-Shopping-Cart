@@ -28,7 +28,7 @@
     <div class='card-body text-center'>
     <h5 class='card-title text-danger fs-4 fw-bold'>$row[PName]</h5>
     <p class='card-text text-danger fs-4 fw-bold'>Price: $row[PPrice]</p>
-    <input type='number' min='1' max='99' placeholder='Total'><br><br>
+    <input type='number' min='1' max='99' placeholder='  Total'><br><br>
     <input type='submit' class='btn btn-danger text-white w-100' value='Add to Cart'>
   </div>
 </div>

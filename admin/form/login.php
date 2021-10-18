@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>login</title>
+        <title>Admin Login Page</title>
         <link href="bootstrap.min.css" rel="stylesheet">
     </head>
 <body class="bg-secondary">
@@ -19,7 +19,7 @@
   <input type="text" name="username" class="form-control" placeholder="Enter User Name">
 </div>
 <div class="mb-3">
-  <label class="form-label">mail</label>
+  <label class="form-label">Mail</label>
   <input type="text" name="mail" class="form-control" placeholder="Enter Mail Id">
 </div>
 <div class="mb-3">
