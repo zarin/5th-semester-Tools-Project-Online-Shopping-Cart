@@ -38,7 +38,13 @@ if(isset($_POST['addCart']))
          {
              unset($_SESSION['cart'][$key]);
              $_SESSION['cart']=array_values($_SESSION['cart']);
-             header('location:viewcart.php');
+             echo "
+          <script>
+          alert('This Product is Successfully Deleted');
+          window.location.href='viewcart.php';
+          </script>
+          ";
+             //header('location:viewcart.php');
         }
     }
  }
@@ -53,7 +59,13 @@ if(isset($_POST['addCart']))
             $_SESSION['cart'][$key]= array('ProductName'=>$product_name,
                                            'ProductPrice'=>$product_price,
                                            'ProductTotal'=>$product_total);
-                                      header("location:viewcart.php");
+                                           echo "
+                                           <script>
+                                           alert('This Product is Successfully Updated');
+                                           window.location.href='viewcart.php';
+                                           </script>
+                                           ";
+                                      //header("location:viewcart.php");
          }
     }
  }
