@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Admin Login Page</title>
+        <link rel="stylesheet"href="background_img.css">
         <link href="bootstrap.min.css" rel="stylesheet">
     </head>
-<body class="bg-secondary">
+<body class="bg">
 <div class="container">
         <div class="row">
-            <div class="col-md-6 shadow m-auto bg-white font-monospace p-3 border border-success mt-3">
+            <div class="col-md-6 shadow m-auto bg-white font-monospace p-3 border border-success mt-5">
 <form action="login1.php" method="POST">
 <div class="mb-3">
   <p class="text-center fw-bold fs-3 text-success">Login:</p>

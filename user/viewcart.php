@@ -4,22 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>User ViewCart Page</title>
+        <link rel="stylesheet"href="background_img 1.css">
         <?php
         include 'header.php';
         ?>
     </head>
-    <body>
+    <body class="bg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center bg-light mb-5 rounded">
-                    <h1 class="text-warning">My Cart</h1>
+               <!-- <div class="col-lg-12 text-center bg-light rounded mb-5">   -->
+                    <h1 class="text-center text-white">My Cart</h1>
 </div>
 </div>
 </div>
 <div class="container-fluid">
     <div class="row justify-content-around">
         <div class="col-sm-12 col-md-6 col-lg-9">
-            <table class="table table-bordered text-center">
+            <table class="table table-bordered text-center table-hover">
                 <thead class="bg-success text-white fs-5">
                     <th>Serial No</th>
                     <th>Product Name</th>

@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Product Page</title>
         <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet"href="background_img.css">
     </head>
-<body>
+<body class>
 <div class="container">
         <div class="row">
             <div class="col-md-6 m-auto border border-success mt-3">
@@ -44,7 +45,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-10 m-auto">
-<table class="table table-hover border border-warning my-5">
+<table class="table table-striped table-hover border border-warning my-5">
 <thead class="bg-dark text-white fs-5 font-monospace text-center">
     <th>Id</th>
     <th>Name</th>
