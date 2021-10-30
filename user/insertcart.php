@@ -9,19 +9,19 @@ session_start();
  if(isset($_POST['addCart']))
  {
 
-        $check_product = array_column($_SESSION['cart'],'ProductName');
-           if(in_array($product_name,$check_product))
-           {
-               echo "
-               <script>
-               alert('This Product is Already Added');
-               window.location.href='home.php';
-               </script>
-              ";
-          }
+          $check_product = array_column($_SESSION['cart'],'ProductName');
+             if(in_array($product_name,$check_product))
+             {
+                 echo "
+                 <script>
+                 alert('This Product is Already Added');
+                 window.location.href='home.php';
+                 </script>
+                ";
+            }
 
-          else
-        {
+            else
+          {
 
     $_SESSION['cart'][] = array('ProductName'=>$product_name,
                               'ProductPrice'=>$product_price,
@@ -32,24 +32,24 @@ session_start();
 }
 
 //Delete Item
- if(isset($_POST['remove']))
- {
-     foreach($_SESSION['cart'] as $key  => $value)
-     {
-         if($value['ProductName']== $_POST['item'])
-         {
-             unset($_SESSION['cart'][$key]);
-             $_SESSION['cart']=array_values($_SESSION['cart']);
-             echo "
-          <script>
-          alert('This Product is Successfully Deleted');
-          window.location.href='viewcart.php';
-          </script>
-          ";
-             //header('location:viewcart.php');
-        }
-    }
- }
+  if(isset($_POST['remove']))
+  {
+      foreach($_SESSION['cart'] as $key  => $value)
+      {
+          if($value['ProductName']== $_POST['item'])
+          {
+              unset($_SESSION['cart'][$key]);
+              $_SESSION['cart']=array_values($_SESSION['cart']);
+            echo"
+           <script>
+           alert('This Product is Successfully Deleted');
+           window.location.href='viewcart.php';
+           </script>
+           ";
+              //header('location:viewcart.php');
+         }
+     }
+  }
 
  //Update Product
  if(isset($_POST['update']))

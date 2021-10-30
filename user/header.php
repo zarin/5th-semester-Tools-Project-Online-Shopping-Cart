@@ -6,7 +6,7 @@
         <title>User Header</title>
         <link href="bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    </head>
+      </head>
     <body>
       <?php
       session_start();
@@ -30,8 +30,8 @@
 </div>
 </nav>
 </div>
-<div class="bg-success sticky-top font-monospace">
-  <ul class="list-unstyled d-flex justify-content-center">
+    <div class="bg-success sticky-top font-monospace">     
+    <ul class="list-unstyled d-flex justify-content-center">
     <li><a href="gents.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Gents</a></li>
     <li><a href="ladies.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Ladies</a></li>
     <li><a href="kids.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Kids</a></li>

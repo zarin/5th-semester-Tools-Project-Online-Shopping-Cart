@@ -37,11 +37,11 @@
                     $index=0;
                     if(isset($_SESSION['cart']))
                     {
-                        foreach($_SESSION['cart'] as $key=> $value)
+                         foreach($_SESSION['cart'] as $key=> $value)
                         {
-                            $Ptotal_price = $value['ProductPrice'] * $value['ProductTotal'];
-                            $total_price += $value['ProductPrice'] * $value['ProductTotal'];
-                            $index = $key+1;
+                             $Ptotal_price = $value['ProductPrice'] * $value['ProductTotal'];
+                             $total_price += $value['ProductPrice'] * $value['ProductTotal'];
+                             $index = $key+1;
                             echo "
                             <form action = 'insertcart.php' method='POST'>
                             <tr>
