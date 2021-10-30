@@ -9,19 +9,19 @@ session_start();
  if(isset($_POST['addCart']))
  {
 
-          $check_product = array_column($_SESSION['cart'],'ProductName');
-             if(in_array($product_name,$check_product))
-             {
-                 echo "
-                 <script>
-                 alert('This Product is Already Added');
-                 window.location.href='home.php';
-                 </script>
-                ";
-            }
+           $check_product = array_column($_SESSION['cart'],'ProductName');
+              if(in_array($product_name,$check_product))
+              {
+                  echo "
+                  <script>
+                  alert('This Product is Already Added');
+                  window.location.href='home.php';
+                  </script>
+                 ";
+             }
 
-            else
-          {
+             else
+           {
 
     $_SESSION['cart'][] = array('ProductName'=>$product_name,
                               'ProductPrice'=>$product_price,

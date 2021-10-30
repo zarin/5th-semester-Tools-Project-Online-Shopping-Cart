@@ -30,7 +30,8 @@
 </div>
 </nav>
 </div>
-    <div class="bg-success sticky-top font-monospace">     
+    <div class="bg-success sticky-top font-monospace"> 
+      <!-- <div class="try"> -->
     <ul class="list-unstyled d-flex justify-content-center">
     <li><a href="gents.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Gents</a></li>
     <li><a href="ladies.php" class="text-decoration-none text-white fw-bold fs-4 px-5 ">Ladies</a></li>
