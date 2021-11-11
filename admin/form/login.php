@@ -13,7 +13,7 @@
             <div class="col-md-6 shadow m-auto bg-white font-monospace p-3 border border-success mt-5">
 <form action="login1.php" method="POST">
 <div class="mb-3">
-  <p class="text-center fw-bold fs-3 text-success">Login:</p>
+  <p class="text-center fw-bold fs-3 text-success">Admin Login</p>
 </div>
 <div class="mb-3">
   <label class="form-label"> User Name</label>
