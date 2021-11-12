@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
         echo"
         <script>
         alert('This E-mail is already Added');
-        window.location.href='register,php';
+        window.location.href='register.php';
         </script>
         ";
     }
@@ -34,6 +34,12 @@ if(isset($_POST['submit'])){
 
     else{
         mysqli_query($con,"INSERT INTO `tbluser`(`username`, `mail`, `number`, `password`) VALUES ('$name','$mail','$number','$password')");
+        echo"
+        <script>
+        alert('Successfully Registered');
+        window.location.href='login.php';
+        </script>
+        ";
     }
 }
 ?>

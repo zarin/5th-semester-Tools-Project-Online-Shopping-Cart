@@ -20,12 +20,28 @@
   <div class="container-fluid font-monospace">
     <a class="navbar-brand text-warning pb-2"><h1>My Store</h1></a>
     <div class="d-flex">
-    <a href="home.php"class="text-warning text-decoration-none pe-2"><i class="fas fa-home"></i>Home |</a>
-    <a href="viewcart.php"class="text-warning text-decoration-none pe-2"><i class="fas fa-shopping-cart"></i>Cart(<?php echo $count ?>) |</a>
-    <span class="text-warning pe-2">
-        <i class="fas fa-user-shield"></i>Hello |
-        <a href="" class="text-warning text-decoration-none pe-2"><i class="fas fa-sign-in-alt"></i>Login |</a>
-        <a href="../admin/mystore.php" class="text-warning text-decoration-none pe-2"><i class="fas fa-user-shield"></i>Admin</a>
+
+    <a href="home.php"class="text-warning text-decoration-none"><i class="fas fa-home"></i>  Home | </a>
+
+    <a href="viewcart.php"class="text-warning text-decoration-none"> <i class= "fas fa-shopping-cart"> </i> Cart(<?php echo $count ?>) | </a>
+
+    <span class="text-warning">
+        <i class="fas fa-user-shield"></i> Hello <?php 
+        if(isset($_SESSION['user'])){
+        echo $_SESSION['user'];
+        echo"
+        | <a href='form/logout.php' class='text-warning text-decoration-none'><i class='fas fa-sign-in-alt'></i> Logout |</a>
+        ";
+        }
+        else{
+          echo"
+        <a href='form/login.php' class='text-warning text-decoration-none'><i class='fas fa-sign-in-alt'></i> Login |</a>
+        ";
+        }
+        ?>
+
+
+        <a href="../admin/mystore.php" class="text-warning text-decoration-none"><i class="fas fa-user-shield"></i> Admin</a>
 </span>
 </div>
 </nav>

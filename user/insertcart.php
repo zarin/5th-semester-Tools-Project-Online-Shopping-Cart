@@ -1,7 +1,5 @@
 <?php
 session_start(); 
-
-
      $product_name = $_POST['PName'];
      $product_price = $_POST['PPrice'];
      $product_total = $_POST['PTotal'];
@@ -19,6 +17,7 @@ session_start();
                    </script>
                   ";
               }
+            
 
               else
             {
@@ -28,8 +27,13 @@ session_start();
                               'ProductTotal'=>$product_total);
                              header("location:viewcart.php");
     }
-                               
 }
+
+                               
+
+
+ 
+ 
 
 //Delete Item
   if(isset($_POST['remove']))
@@ -72,5 +76,5 @@ session_start();
     }
  }
 
-
+  
  ?>
