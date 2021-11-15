@@ -3,31 +3,35 @@ session_start();
      $product_name = $_POST['PName'];
      $product_price = $_POST['PPrice'];
      $product_total = $_POST['PTotal'];
+     
+     if(isset($_SESSION['user'])){
+
+     
 
  if(isset($_POST['addCart']))
  {
 
-            $check_product = array_column($_SESSION['cart'],'ProductName');
-               if(in_array($product_name,$check_product))
-               {
-                   echo "
-                   <script>
-                   alert('This Product is Already Added');
-                   window.location.href='home.php';
-                   </script>
-                  ";
-              }
+            //  $check_product = array_column($_SESSION['cart'],'ProductName');
+            //     if(in_array($product_name,$check_product))
+            //     {
+            //         echo "
+            //         <script>
+            //         alert('This Product is Already Added');
+            //         window.location.href='home.php';
+            //         </script>
+            //        ";
+            //    }
             
 
-              else
-            {
+            //    else
+            //  {
 
     $_SESSION['cart'][] = array('ProductName'=>$product_name,
                               'ProductPrice'=>$product_price,
                               'ProductTotal'=>$product_total);
                              header("location:viewcart.php");
     }
-}
+//}
 
                                
 
@@ -75,6 +79,9 @@ session_start();
          }
     }
  }
-
+     }
+     else{
+         header("location:form/login.php");
+     }
   
  ?>

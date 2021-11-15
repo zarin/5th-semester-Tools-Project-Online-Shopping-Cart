@@ -5,9 +5,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Product Page</title>
         <link href="bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet"href="background_img.css">
     </head>
-<body class>
+<body>
 <div class="container">
         <div class="row">
             <div class="col-md-6 m-auto border border-success mt-3">
@@ -53,6 +52,7 @@
     <th>Image</th>
     <th>Category</th>
     <th>Delete</th>
+    <th>Update</th>
 </thead>
 <tbody class="text-center">
 <?php
@@ -68,7 +68,8 @@ $Record = mysqli_query($con,"SELECT * FROM `tblproduct` ");
       <td>$row[PPrice]</td>
       <td><img src='$row[PImage]' height='90px' width='200px'></td>
       <td>$row[PCategory]</td>
-      <td><a href='' class='btn btn-danger'>Home</a></td>
+      <td><a href='' class='btn btn-danger'>Delete</a></td>
+      <td><a href='update.php? Id=$row[Id]' class='btn btn-warning'>Update</a></td>
     </tr>
 
       ";
