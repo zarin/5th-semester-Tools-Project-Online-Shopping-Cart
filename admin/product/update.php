@@ -8,8 +8,9 @@
     </head>
 <body>
 <?php
-$id=$_POST['Id'];
-include 'config.php';
+$id=$_GET['Id'];
+include ('config.php');
+error_reporting(0);
 $Record=mysqli_query($con,"SELECT * FROM `tblproduct` WHERE Id = $id ");
 $data=mysqli_fetch_array($Record);
 ?>
@@ -43,7 +44,7 @@ $data=mysqli_fetch_array($Record);
   <option value="Kids">Kids</option>
 </select>
 </div>
-<input type="hidden" name="Id" value="<?php echo $data['Id']?>">
+<input type="text" name="Id" value="<?php echo $data['Id']?>">
 <button name="update" class="bg-success fs-4 fw-bold my-3 form-control text-white">Update</button> 
 </form>
 </div>
@@ -52,7 +53,7 @@ $data=mysqli_fetch_array($Record);
 
     <!-- php update code -->
     <?php
-    if(isset($_POST['update'])){
+    if($_GET['update']){
         $id=$_POST['Id'];
         $product_name = $_POST['PName'];
         $product_price = $_POST['PPrice'];
@@ -65,8 +66,9 @@ $data=mysqli_fetch_array($Record);
     
         $product_category = $_POST['PCategory'];
 
-        include 'config.php';
-        mysqli_query($con,"UPDATE `tblproduct` SET `PName`='$product_name',`PPrice`='$product_price',`PImage`=' $img_des',`PCategory`=' $product_category' WHERE Id=$id");
+        include ('config.php');
+        error_reporting(0);
+        mysqli_query($con,"UPDATE `tblproduct` SET `PName`='$product_name',`PPrice`='$product_price',`PImage`=' $img_des',`PCategory`=' $product_category' WHERE Id='$id' ");
         header("location:index.php");
 
     }
