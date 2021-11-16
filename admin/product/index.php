@@ -69,7 +69,7 @@ $Record = mysqli_query($con,"SELECT * FROM `tblproduct` ");
       <td><img src='$row[PImage]' height='90px' width='200px'></td>
       <td>$row[PCategory]</td>
       <td><a href='' class='btn btn-danger'>Delete</a></td>
-      <td><a href='update.php? Id=$row[Id]' class='btn btn-warning'>Update</a></td>
+      <td><a href='updateindex.php? Id=$row[Id]' class='btn btn-warning'>Update</a></td>
     </tr>
 
       ";
