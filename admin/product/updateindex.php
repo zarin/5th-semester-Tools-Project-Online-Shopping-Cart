@@ -7,12 +7,12 @@
         <link href="bootstrap.min.css" rel="stylesheet">
     </head>
 <body>
+  
 <?php
 include ('config.php');
 $id=$_GET["Id"];
-error_reporting(0);
 $Record=mysqli_query($con,"SELECT * FROM `tblproduct` WHERE Id = $id ");
-$data=mysqli_fetch_array($Record);
+$row=mysqli_fetch_array($Record);
 ?> 
 
 <div class="container">
@@ -24,16 +24,16 @@ $data=mysqli_fetch_array($Record);
 </div>
 <div class="mb-3">
   <label class="form-label">Product Name</label>
-  <input type="text" value="<?php echo $data['PName']?>" name="PName" class="form-control" placeholder="Enter Product Name">
+  <input type="text" value="<?php echo $row['PName']?>" name="PName" class="form-control" placeholder="Enter Product Name">
 </div>
 <div class="mb-3">
   <label class="form-label">Product Price</label>
-  <input type="text" value="<?php echo $data['PPrice']?>" name="PPrice" class="form-control" placeholder="Enter Product Price">
+  <input type="text" value="<?php echo $row['PPrice']?>" name="PPrice" class="form-control" placeholder="Enter Product Price">
 </div>
 <div class="mb-3">
   <label class="form-label">Add Product Image</label>
   <input type="file" name="PImage" class="form-control"><br>
-  <img src="<?php echo $data['PImage']?>"alt=""style="height:100px;">
+  <img src="<?php echo $row['PImage']?>"alt=""style="height:100px;">
 </div>
 <div class="mb-3">
   <label class="form-label">Select Page Category</label>
@@ -44,10 +44,11 @@ $data=mysqli_fetch_array($Record);
   <option value="Kids">Kids</option>
 </select>
 </div>
-<input type="hidden" name="Id" value="<?php echo $data['Id']?>">
+<input type="hidden" name="Id" value="<?php echo $row['Id']?>">
 <button name="update" class="bg-success fs-4 fw-bold my-3 form-control text-white">Update</button> 
 </form>
 </div>
 </div>
 </div>
 </body>
+</html>
