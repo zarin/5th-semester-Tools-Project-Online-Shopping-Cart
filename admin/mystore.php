@@ -25,7 +25,7 @@
     <i class="fas fa-sign-out-alt"></i>
     <a href="form/logout.php" class="text-decoration-none text-warning px-1">Logout |</a>
     <i class="fas fa-users"></i>
-    <a href="" class="text-decoration-none text-warning px-1">Userpanel</a> 
+    <a href="../user/home.php" class="text-decoration-none text-warning px-1">Userpanel</a> 
 </span>
 </div>
 </nav>
@@ -34,7 +34,8 @@
 </div>
 <div class="col-md-6 bg-success text-center m-auto">
   <a href="product/index.php"class="text-decoration-none text-white fs-4 fw-bold px-5">Add Post</a>
-  <a href=""class="text-decoration-none text-white fs-4 fw-bold px-5">Users</a>
+  <a href="form/adduser.php"class="text-decoration-none text-white fs-4 fw-bold px-5">Add Users</a>
+  <a href="form/adduserlist.php"class="text-decoration-none text-white fs-4 fw-bold px-5">Users List</a>
 </div>
 </body>
 </html>

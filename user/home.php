@@ -17,6 +17,7 @@
         <?php
         include 'config.php';
         $Record = mysqli_query($con,"SELECT * FROM `tblproduct`");
+        
           while ($row = mysqli_fetch_array($Record))
           {
             $check_page = $row['PCategory'];
