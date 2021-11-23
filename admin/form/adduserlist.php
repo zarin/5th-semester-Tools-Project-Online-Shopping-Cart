@@ -44,6 +44,7 @@
     <th>User Name</th>
     <th>User E-mail</th>
     <th>Phone Number</th>
+    <th>Delete</th>
 </thead>
 <tbody class="text-center">
 <?php
@@ -58,6 +59,7 @@ $Record = mysqli_query($con,"SELECT * FROM `tbluser` ");
       <td>$row[username]</td>
       <td>$row[mail]</td>
       <td>$row[number]</td>
+      <td><a href='userdelete.php?id=$row[id]' class='btn btn-danger'>Delete</a></td>
     </tr>
 
       ";

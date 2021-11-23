@@ -30,7 +30,7 @@
                   <input type="password"name="password"placeholder="Enter User Password"class="form-control"required>
               </div>
               <div class="mb-3">
-              <button name="send" class="w-100 bg-success fs-4 fw-bold form-control text-white">REGISTER</button>
+              <button name="send" class="w-100 bg-success fs-4 fw-bold form-control text-white">ADD USER</button>
               </div>
               
           </form>

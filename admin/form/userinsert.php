@@ -3,7 +3,7 @@
 $con = mysqli_connect('localhost','root','','ecommerce');
 
 if(isset($_POST['send'])){
-    $Id=$_POST['Id'];
+    $Id=$_POST['id'];
     $name=$_POST['username'];
     $mail=$_POST['mail'];
     $number=$_POST['number'];
@@ -37,7 +37,7 @@ if(isset($_POST['send'])){
         mysqli_query($con,"INSERT INTO `tbluser`(`username`, `mail`, `number`, `password`) VALUES ('$name','$mail','$number','$password')");
         echo"
         <script>
-        alert('Successfully Registered');
+        alert('User Added Successfully');
         window.location.href='adduserlist.php';
         </script>
         ";
