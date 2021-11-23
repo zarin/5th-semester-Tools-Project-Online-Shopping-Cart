@@ -1,15 +1,15 @@
 <?php
-$name=$_POST['name'];
+$username=$_POST['username'];
 $mail=$_POST['mail'];
 $password=$_POST['password'];
 
 $con = mysqli_connect('localhost','root','','ecommerce');
-$result=mysqli_query($con ,"SELECT * FROM `tbluser` WHERE (username='$name'AND mail='$mail'AND  password='$password')");
+$result=mysqli_query($con ,"SELECT * FROM `tbluser` WHERE (username='$username'AND mail='$mail'AND  password='$password')");
 
 session_start();
 
 if(mysqli_num_rows($result)){
-    $_SESSION['user']=$name;
+    $_SESSION['user']=$username;
 
 
     echo"

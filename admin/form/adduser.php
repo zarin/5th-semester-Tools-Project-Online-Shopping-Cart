@@ -8,7 +8,7 @@
     <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
           <div class="col-md-6 mt-5 m-auto bg-white shadow font-monospace">
           <p class="text-success text-center fs-3 fw-bold my-3">Add User</p>

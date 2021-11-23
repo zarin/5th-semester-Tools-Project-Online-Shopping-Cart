@@ -8,7 +8,7 @@
     <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
           <div class="col-md-6 mt-5 m-auto bg-white shadow font-monospace">
 
@@ -16,7 +16,7 @@
           <form action="login1.php" method="POST">
               <div class="mb-3">
                   <label for="">User Name</label>
-                  <input type="text" name="name"placeholder="Enter User Name"class="form-control"required>
+                  <input type="text" name="username"placeholder="Enter User Name"class="form-control"required>
               </div>
 
               <div class="mb-3">

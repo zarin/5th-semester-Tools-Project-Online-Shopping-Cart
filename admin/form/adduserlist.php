@@ -45,6 +45,7 @@
     <th>User E-mail</th>
     <th>Phone Number</th>
     <th>Delete</th>
+    <th>Update</th>
 </thead>
 <tbody class="text-center">
 <?php
@@ -60,6 +61,7 @@ $Record = mysqli_query($con,"SELECT * FROM `tbluser` ");
       <td>$row[mail]</td>
       <td>$row[number]</td>
       <td><a href='userdelete.php?id=$row[id]' class='btn btn-danger'>Delete</a></td>
+      <td><a href='userupdate-index.php?id=$row[id]' class='btn btn-warning'>Update</a></td>
     </tr>
 
       ";

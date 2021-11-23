@@ -75,6 +75,7 @@
     <th>Image</th>
     <th>Category</th>
     <th>Delete</th>
+    <th>Update</th>
 </thead>
 <tbody class="text-center">
 <?php
@@ -91,6 +92,7 @@ $Record = mysqli_query($con,"SELECT * FROM `tblproduct` ");
       <td><img src='$row[PImage]' height='90px' width='200px'></td>
       <td>$row[PCategory]</td>
       <td><a href='delete.php?Id=$row[Id]' class='btn btn-danger'>Delete</a></td>
+      <td><a href='update-index.php?Id=$row[Id]' class='btn btn-warning'>Update</a></td>
     </tr>
 
       ";

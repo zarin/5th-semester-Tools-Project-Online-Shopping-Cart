@@ -15,7 +15,7 @@
           <form action="insert.php" method="POST">
               <div class="mb-3">
                   <label for="">User Name</label>
-                  <input type="text" name="name"placeholder="Enter User Name"class="form-control"required>
+                  <input type="text" name="username"placeholder="Enter User Name"class="form-control"required>
               </div>
               <div class="mb-3">
                   <label for="">User E-mail</label>

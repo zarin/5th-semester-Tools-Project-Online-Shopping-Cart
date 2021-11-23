@@ -8,7 +8,7 @@
         <link href="bootstrap.min.css" rel="stylesheet">
     </head>
 <body class="bg">
-<div class="container">
+<div class="container mt-5">
         <div class="row">
             <div class="col-md-6 shadow m-auto bg-white font-monospace p-3 border border-success mt-5">
 <form action="login1.php" method="POST">

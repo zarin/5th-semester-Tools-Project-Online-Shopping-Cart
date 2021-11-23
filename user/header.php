@@ -30,7 +30,8 @@
         if(isset($_SESSION['user'])){
         echo $_SESSION['user'];
         echo"
-        | <a href='form/logout.php' class='text-warning text-decoration-none'><i class='fas fa-sign-in-alt'></i> Logout |</a>
+        | <a href='form/infoupdate-index.php' class='text-warning text-decoration-none'><i class='fas fa-pen-square'></i> Update User Information |</a>
+        <a href='form/logout.php' class='text-warning text-decoration-none'><i class='fas fa-sign-in-alt'></i> Logout |</a>
         ";
         }
         else{

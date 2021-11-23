@@ -3,7 +3,7 @@
 $con = mysqli_connect('localhost','root','','ecommerce');
 
 if(isset($_POST['submit'])){
-    $name=$_POST['name'];
+    $username=$_POST['username'];
     $mail=$_POST['mail'];
     $number=$_POST['number'];
     $password=$_POST['password'];
@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
 
     $dup_mail=mysqli_query($con,"SELECT `id`, `username`, `mail`, `number`, `password` FROM `tbluser` WHERE mail='$mail'");
 
-    $dup_username=mysqli_query($con,"SELECT `id`, `username`, `mail`, `number`, `password` FROM `tbluser` WHERE username='$name'");
+    $dup_username=mysqli_query($con,"SELECT `id`, `username`, `mail`, `number`, `password` FROM `tbluser` WHERE username='$username'");
 
    
     if(mysqli_num_rows($dup_mail)){
@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
     }
 
     else{
-        mysqli_query($con,"INSERT INTO `tbluser`(`username`, `mail`, `number`, `password`) VALUES ('$name','$mail','$number','$password')");
+        mysqli_query($con,"INSERT INTO `tbluser`(`username`, `mail`, `number`, `password`) VALUES ('$username','$mail','$number','$password')");
         echo"
         <script>
         alert('Successfully Registered');

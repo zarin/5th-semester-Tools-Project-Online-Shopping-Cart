@@ -3,7 +3,7 @@
 $con = mysqli_connect('localhost','root','','ecommerce');
 
 if(isset($_POST['send'])){
-    $Id=$_POST['id'];
+    $id=$_POST['id'];
     $name=$_POST['username'];
     $mail=$_POST['mail'];
     $number=$_POST['number'];
