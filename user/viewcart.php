@@ -63,10 +63,15 @@
 </table>
 </div>
 <div class="col-lg-3 text-center">
-    <h3>Total Price</h3>
-    <h1 class="bg-success text-white"><?php echo number_format($total_price,2)?></h1>
+    <h3><b>Total Price</b></h3>
+    <h1 class="bg-success text-white"><?php echo number_format($total_price,2)?><h1><br><br>
+
+    <a href="home.php" name="continue_shopping" class="text-decoration-none btn-dark fs-4 fw-bold form-control text-white"></a> <i class= "fas fa-shopping-cart"> </i> Continue Shopping</a><br>
+    <a href="checkout.php" name="checkout" class="text-decoration-none btn-danger fw-bold fs-4 form-control text-white<?=($total_price>1)?"":"disabled";?>"> <i class="far fa-credit-card"></i> Checkout</a>
+
 
 </div>
+
 </div>
 </div>
 </body>
