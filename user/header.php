@@ -10,6 +10,7 @@
     <body>
       <?php
       session_start();
+      include 'config.php';
       $count=0;
       if(isset($_SESSION['cart']))
       {
@@ -17,7 +18,7 @@
       }
       ?>
     <nav class="navbar navbar-light bg-dark">
-  <div class="container-fluid font-monospace">
+    <div class="container-fluid font-monospace">
     <a class="navbar-brand text-warning pb-2"><h1>My Store</h1></a>
     <div class="d-flex">
 
@@ -28,12 +29,14 @@
     <span class="text-warning">
         <i class="fas fa-user-shield"></i> Hello <?php 
         if(isset($_SESSION['user'])){
-        echo $_SESSION['user'];
+        echo $_SESSION['user'];                     
         echo"
-        | <a href='form/userupdate-index.php' class='text-warning text-decoration-none'><i class='fas fa-pen-square'></i> Update User Information |</a>
-        <a href='form/logout.php' class='text-warning text-decoration-none'><i class='fas fa-sign-in-alt'></i> Logout |</a>
+        | <a href='form/logout.php' class='text-warning text-decoration-none'><i class='fas fa-sign-in-alt'></i> Logout |</a>
+        
         ";
         }
+      
+    
         else{
           echo"
         <a href='form/login.php' class='text-warning text-decoration-none'><i class='fas fa-sign-in-alt'></i> Login |</a>
@@ -41,8 +44,10 @@
         }
         ?>
 
+<!-- <a href='form/profile.php' class='text-warning text-decoration-none'><i class='fas fa-pen-square'></i> Profile |</a> -->
+       
 
-        <a href="../admin/mystore.php" class="text-warning text-decoration-none"><i class="fas fa-user-shield"></i> Admin</a>
+    <a href="../admin/mystore.php" class="text-warning text-decoration-none"><i class="fas fa-user-shield"></i> Admin</a>
 </span>
 </div>
 </nav>
